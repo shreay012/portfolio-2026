@@ -22,9 +22,10 @@ export function InteractiveProjectGallery({
   title = 'Interactive Gallery',
   eyebrow = 'Project Visuals',
   intro,
-  images,
+  images: rawImages,
 }: InteractiveProjectGalleryProps) {
   const [activeIndex, setActiveIndex] = useState(0)
+  const images = Array.isArray(rawImages) ? rawImages : []
   const activeImage = useMemo(() => images[activeIndex] ?? images[0], [activeIndex, images])
 
   if (!images.length) return null
@@ -110,15 +111,15 @@ export function ExperiencePanel({
   title = 'Flow Perspectives',
   leftTitle,
   leftSummary,
-  leftPoints,
+  leftPoints = [],
   rightTitle,
   rightSummary,
-  rightPoints,
+  rightPoints = [],
 }: ExperiencePanelProps) {
   const [active, setActive] = useState<'left' | 'right'>('left')
   const current = active === 'left'
-    ? { title: leftTitle, summary: leftSummary, points: leftPoints }
-    : { title: rightTitle, summary: rightSummary, points: rightPoints }
+    ? { title: leftTitle, summary: leftSummary, points: Array.isArray(leftPoints) ? leftPoints : [] }
+    : { title: rightTitle, summary: rightSummary, points: Array.isArray(rightPoints) ? rightPoints : [] }
 
   return (
     <section className="my-14 rounded-[32px] border border-white/[0.08] bg-white/[0.02] p-5 lg:p-7 not-prose">

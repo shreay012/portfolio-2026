@@ -1,6 +1,6 @@
 import type { Metadata, ResolvingMetadata } from 'next'
 import { notFound } from 'next/navigation'
-import { MDXRemote } from 'next-mdx-remote/rsc'
+import { compileMDX } from 'next-mdx-remote/rsc'
 import { getCaseStudyBySlug, getAllCaseStudySlugs } from '@/lib/mdx'
 import { CaseStudyLayout } from '@/components/CaseStudyLayout'
 import { ProjectImage, ProjectImageRow } from '@/components/CaseStudyMedia'
@@ -75,7 +75,7 @@ export async function generateMetadata(
   }
 }
 
-export default function ProjectDetailPage({ params }: PageProps) {
+export default async function ProjectDetailPage({ params }: PageProps) {
   const study = getCaseStudyBySlug(params.slug)
   if (!study) notFound()
 
@@ -104,9 +104,11 @@ export default function ProjectDetailPage({ params }: PageProps) {
     ProjectImageRow,
   }
 
+  const mdx = await compileMDX({ source: study.content, components, options: {} })
+
   return (
     <CaseStudyLayout frontmatter={study.frontmatter} toc={toc} readingTime={readingTime}>
-      <MDXRemote source={study.content} components={components} />
+      {mdx.content}
     </CaseStudyLayout>
   )
 }
