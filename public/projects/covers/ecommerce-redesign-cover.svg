@@ -1,0 +1,11 @@
+<svg width="1400" height="900" viewBox="0 0 1400 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1400" height="900" fill="#1A1208"/>
+  <rect x="48" y="48" width="1304" height="804" rx="36" fill="#2C1F11" stroke="rgba(255,255,255,0.12)"/>
+  <circle cx="1120" cy="170" r="156" fill="#F97316" fill-opacity="0.22"/>
+  <rect x="124" y="132" width="470" height="26" rx="13" fill="white" fill-opacity="0.78"/>
+  <rect x="124" y="178" width="280" height="14" rx="7" fill="white" fill-opacity="0.35"/>
+  <rect x="124" y="252" width="660" height="516" rx="24" fill="#23180E" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="812" y="252" width="460" height="516" rx="24" fill="white" fill-opacity="0.04"/>
+  <text x="124" y="98" fill="white" fill-opacity="0.9" font-family="Arial, sans-serif" font-size="30" font-weight="700">E-Commerce Overhaul</text>
+  <text x="124" y="816" fill="white" fill-opacity="0.55" font-family="Arial, sans-serif" font-size="22">Checkout and PDP Conversion Redesign</text>
+</svg>

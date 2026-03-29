@@ -1,0 +1,328 @@
+{
+  "siteName": "Shreay Goyal",
+  "logoLetter": "S",
+  "contactEmail": "shreay012@gmail.com",
+  "navbarLinks": [
+    {
+      "href": "/projects",
+      "label": "Projects"
+    },
+    {
+      "href": "/about",
+      "label": "About"
+    },
+    {
+      "href": "/tools",
+      "label": "Tools"
+    },
+    {
+      "href": "/books",
+      "label": "Books"
+    },
+    {
+      "href": "/blog",
+      "label": "Blog"
+    }
+  ],
+  "footerLinks": [
+    {
+      "href": "/",
+      "label": "Home"
+    },
+    {
+      "href": "/projects",
+      "label": "Projects"
+    },
+    {
+      "href": "/about",
+      "label": "About"
+    },
+    {
+      "href": "/tools",
+      "label": "Tools"
+    },
+    {
+      "href": "/books",
+      "label": "Books"
+    },
+    {
+      "href": "/blog",
+      "label": "Blog"
+    },
+    {
+      "href": "/services",
+      "label": "Services"
+    },
+    {
+      "href": "/contact",
+      "label": "Contact"
+    }
+  ],
+  "footerTagline": "Senior Product Designer and UX Strategist focused on AI-driven product experiences for SaaS and enterprise teams.",
+  "footerSocials": [
+    {
+      "href": "https://linkedin.com/in/shreaygoyal",
+      "label": "LinkedIn"
+    },
+    {
+      "href": "https://twitter.com/shreaygoyal",
+      "label": "Twitter / X"
+    },
+    {
+      "href": "https://github.com/shreaygoyal",
+      "label": "GitHub"
+    }
+  ],
+  "hero": {
+    "badge": "Available for select product collaborations",
+    "titleLeading": "AI-driven design",
+    "titleHighlight": "for real product impact.",
+    "description": "Senior Product Designer with 8+ years designing SaaS and enterprise experiences that improve usability, engagement, and product growth.",
+    "primaryCtaLabel": "View Projects",
+    "primaryCtaHref": "/projects",
+    "secondaryCtaLabel": "Book a Discovery Call",
+    "secondaryCtaHref": "/contact",
+    "stats": [
+      {
+        "value": "8+",
+        "label": "Years of experience"
+      },
+      {
+        "value": "6+",
+        "label": "Global brands"
+      },
+      {
+        "value": "SaaS",
+        "label": "Product focus"
+      },
+      {
+        "value": "AI",
+        "label": "Design-led workflows"
+      }
+    ]
+  },
+  "projects": [
+    {
+      "id": "quickhire",
+      "title": "QuickHire",
+      "description": "Redesigned an AI-powered job matching platform. Focused on reducing cognitive load and increasing trust signals, cutting time-to-hire by 60%.",
+      "tags": [
+        "UX Design",
+        "Product Strategy",
+        "Growth"
+      ],
+      "gradient": "from-blue-600/25 via-blue-500/10 to-transparent",
+      "accentColor": "#4F8CFF",
+      "coverImage": "/projects/covers/quickhire-cover.svg",
+      "link": "/projects/quickhire",
+      "featured": true,
+      "year": "2024",
+      "metrics": "−60% time-to-hire"
+    },
+    {
+      "id": "goutbond",
+      "title": "Goutbond",
+      "description": "Designed a community-driven marketplace with AI-curated discovery. Personalization engine drove 3× increase in user retention and daily active usage.",
+      "tags": [
+        "UI/UX",
+        "Design System",
+        "Retention"
+      ],
+      "gradient": "from-purple-600/25 via-purple-500/10 to-transparent",
+      "accentColor": "#7C5CFF",
+      "coverImage": "/projects/covers/goutbond-cover.svg",
+      "link": "/projects/goutbond",
+      "featured": true,
+      "year": "2024",
+      "metrics": "3× user retention"
+    },
+    {
+      "id": "ai-genie",
+      "title": "AI Genie",
+      "description": "Led end-to-end product design for an AI writing assistant. Reduced onboarding friction and improved workflow efficiency, growing DAU 85% in 3 months.",
+      "tags": [
+        "Product Design",
+        "AI/ML UX",
+        "Onboarding"
+      ],
+      "gradient": "from-emerald-600/25 via-teal-500/10 to-transparent",
+      "accentColor": "#10B981",
+      "coverImage": "/projects/covers/ai-genie-cover.svg",
+      "link": "/projects/ai-genie",
+      "featured": true,
+      "year": "2023",
+      "metrics": "+85% daily active users"
+    },
+    {
+      "id": "ecommerce-redesign",
+      "title": "E-Commerce Overhaul",
+      "description": "Complete checkout flow and PDP redesign for a D2C fashion brand. Streamlined 7-step checkout to 2 steps, boosting conversion rate by 45%.",
+      "tags": [
+        "E-Commerce",
+        "CRO",
+        "UI Design"
+      ],
+      "gradient": "from-orange-600/25 via-amber-500/10 to-transparent",
+      "accentColor": "#F97316",
+      "coverImage": "/projects/covers/ecommerce-redesign-cover.svg",
+      "link": "/projects/ecommerce-redesign",
+      "featured": true,
+      "year": "2023",
+      "metrics": "+45% conversion rate"
+    },
+    {
+      "id": "dashboard-system",
+      "title": "Analytics Dashboard",
+      "description": "Scalable design system and data-rich analytics dashboard for a B2B SaaS platform, serving 200k+ users across enterprise tiers.",
+      "tags": [
+        "Design Systems",
+        "Dashboard",
+        "Data Viz"
+      ],
+      "gradient": "from-violet-600/25 via-indigo-500/10 to-transparent",
+      "accentColor": "#8B5CF6",
+      "coverImage": "/projects/covers/dashboard-system-cover.svg",
+      "link": "/projects/dashboard-system",
+      "featured": false,
+      "year": "2023",
+      "metrics": "200k+ users served"
+    },
+    {
+      "id": "fintech-onboarding",
+      "title": "Fintech Onboarding",
+      "description": "Streamlined multi-step KYC onboarding for a neobank, reducing funnel drop-off by 40% through progressive disclosure.",
+      "tags": [
+        "Fintech",
+        "Onboarding",
+        "Conversion"
+      ],
+      "gradient": "from-sky-600/25 via-blue-500/10 to-transparent",
+      "accentColor": "#0EA5E9",
+      "coverImage": "/projects/covers/fintech-onboarding-cover.svg",
+      "link": "#",
+      "featured": false,
+      "year": "2022",
+      "metrics": "−40% drop-off"
+    },
+    {
+      "id": "healthcare-portal",
+      "title": "Healthcare Portal",
+      "description": "Patient-facing portal redesign with accessibility at its core. Task completion jumped 65% and WCAG AA compliance achieved.",
+      "tags": [
+        "Healthcare",
+        "Accessibility",
+        "UX Research"
+      ],
+      "gradient": "from-green-600/25 via-emerald-500/10 to-transparent",
+      "accentColor": "#22C55E",
+      "coverImage": "/projects/covers/healthcare-portal-cover.svg",
+      "link": "#",
+      "featured": false,
+      "year": "2022",
+      "metrics": "+65% task completion"
+    },
+    {
+      "id": "saas-pricing",
+      "title": "SaaS Pricing Page",
+      "description": "High-converting pricing page with dynamic plan comparison and social proof systems. Resulted in a 35% lift in MRR.",
+      "tags": [
+        "SaaS",
+        "Growth Design",
+        "CRO"
+      ],
+      "gradient": "from-amber-600/25 via-yellow-500/10 to-transparent",
+      "accentColor": "#F59E0B",
+      "coverImage": "/projects/covers/saas-pricing-cover.svg",
+      "link": "#",
+      "featured": false,
+      "year": "2022",
+      "metrics": "+35% MRR lift"
+    },
+    {
+      "id": "mobile-banking",
+      "title": "Mobile Banking App",
+      "description": "Full UX overhaul of iOS/Android banking app, taking App Store rating from 2.1 to 4.7 through deep usability research.",
+      "tags": [
+        "Mobile",
+        "Banking",
+        "UX Research"
+      ],
+      "gradient": "from-teal-600/25 via-cyan-500/10 to-transparent",
+      "accentColor": "#14B8A6",
+      "coverImage": "/projects/covers/mobile-banking-cover.svg",
+      "link": "#",
+      "featured": false,
+      "year": "2021",
+      "metrics": "2.1 → 4.7 ★ App Store"
+    }
+  ],
+  "tools": [
+    {
+      "slug": "ux-evaluation-report-generator",
+      "title": "UX Evaluation Report Generator",
+      "description": "A structured framework for running heuristic reviews, surfacing usability issues, and exporting stakeholder-ready reports.",
+      "category": "Tool",
+      "cta": "Explore Tools",
+      "href": "/tools",
+      "accentColor": "#4F8CFF"
+    },
+    {
+      "slug": "growth-priority-mapper",
+      "title": "Growth Priority Mapper",
+      "description": "A decision tool for ranking UX and product opportunities by business impact, implementation effort, and conversion lift.",
+      "category": "Framework",
+      "cta": "See Frameworks",
+      "href": "/tools",
+      "accentColor": "#10B981"
+    }
+  ],
+  "books": [
+    {
+      "slug": "journey-from-graphic-designer-to-product-designer",
+      "title": "Journey from Graphic Designer to Product Designer",
+      "description": "A practical transition story on growing from visual execution into product thinking, systems, research, and strategy.",
+      "category": "Book",
+      "cta": "Explore Books",
+      "href": "/books",
+      "accentColor": "#F97316"
+    },
+    {
+      "slug": "designing-for-ai-trust",
+      "title": "Designing for AI Trust",
+      "description": "A field guide for creating explainable AI experiences that users understand, trust, and adopt more quickly.",
+      "category": "Book",
+      "cta": "Browse Library",
+      "href": "/books",
+      "accentColor": "#7C5CFF"
+    }
+  ],
+  "blogPosts": [
+    {
+      "slug": "build-fast-without-breaking-trust",
+      "title": "Build Fast Without Breaking Trust",
+      "description": "How to move quickly on product experiments without creating confusing UX or undermining user confidence.",
+      "category": "Insight",
+      "cta": "Read Insights",
+      "href": "/blog",
+      "accentColor": "#0EA5E9"
+    },
+    {
+      "slug": "cognitive-load-in-product-design",
+      "title": "Cognitive Load in Product Design",
+      "description": "A breakdown of why users stall, hesitate, or abandon flows when interfaces ask for too much thinking at once.",
+      "category": "Article",
+      "cta": "View Articles",
+      "href": "/blog",
+      "accentColor": "#EAB308"
+    },
+    {
+      "slug": "from-ux-audits-to-growth-roadmaps",
+      "title": "From UX Audits to Growth Roadmaps",
+      "description": "A practical method for translating design observations into business-prioritized product action.",
+      "category": "Essay",
+      "cta": "Open Blog",
+      "href": "/blog",
+      "accentColor": "#14B8A6"
+    }
+  ]
+}

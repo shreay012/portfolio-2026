@@ -1,0 +1,102 @@
+---
+title: AI Genie — Designing for AI Adoption at Scale
+slug: ai-genie
+description: End-to-end product design for an AI writing assistant — reducing onboarding friction and redesigning the creation flow to grow daily active users 85% in 90 days.
+role: Lead Product Designer
+timeline: May – September 2023 (17 weeks)
+industry: Productivity / AI Tools
+tags: [Product Design, AI/ML UX, Onboarding, Growth]
+date: "2023-09-30"
+featured: true
+coverGradient: rgba(16,185,129,0.12) 0%, rgba(16,185,129,0.04) 50%, transparent 100%
+accentColor: "#10B981"
+outcome: +85% daily active users in 90 days post-launch. Onboarding completion improved from 28% to 81%. 7-day retention grew from 22% to 51%.
+---
+
+## The Challenge
+
+AI Genie is a writing assistant that helps marketing teams produce on-brand content at scale — blog posts, email copy, social content, product descriptions. The technology was genuinely impressive. The adoption was not.
+
+When I joined the engagement, they'd been live for eight months with ~3,000 registered users but fewer than 400 daily actives. Their churn rate was brutal: 78% of users who signed up never returned after week two.
+
+The VP of Product's diagnosis: *"People try it, don't get a good first output, assume the AI is bad, and leave. But the AI works fine — users just don't know how to prompt it."*
+
+I suspected the problem ran deeper.
+
+---
+
+## Diagnosis: Three Compounding Failures
+
+After 22 user interviews and a full session recording audit (using Hotjar), I identified three compounding failure points:
+
+### 1. Expectation vs. Reality Gap
+
+Users arrived expecting a magic button — type a topic, receive perfect copy. The actual product required contextual inputs (tone, audience, brand voice, format) that most users had no framework for. The gap between expectation and experience was immediate and damaging.
+
+### 2. Onboarding Asked for Context Before Demonstrating Value
+
+The 9-step onboarding flow asked users to configure brand voice, upload brand guidelines, and set tone parameters before they'd seen a single output. This is backwards: **you earn the right to ask for information by first demonstrating why that information matters**.
+
+### 3. Output Presentation Created False Failure States
+
+When the AI generated copy, it showed one output in a plain textarea with no context, no comparisons, and no easy path to iterate. Users who got mediocre first outputs had no mental model for *why* it was mediocre or *how* to improve it — so they assumed the tool was broken.
+
+---
+
+## Design Principles
+
+I developed three principles specifically for this AI product context:
+
+1. **Show the magic first, configure later** — The aha moment must come before the setup cost. Users need to see what's possible before committing to a configuration.
+2. **Make iteration feel cheap** — AI tools live and die by iteration velocity. Every interaction should make "try again" feel effortless, not like starting over.
+3. **Attribute outputs to inputs** — Help users understand the relationship between what they give the AI and what they get back. This builds both skill and confidence.
+
+---
+
+## Key Design Solutions
+
+### Interactive Demo Onboarding
+
+I replaced the 9-step configuration wizard with a 2-minute interactive demo that showed the product working in a realistic scenario. Users watched a demonstration with sample brand inputs, saw quality output, then were invited to "make it yours" by swapping in their own brand details.
+
+The demo wasn't passive — users clicked through it, edited sample prompts, and saw outputs change in real time. By the time they reached setup, they understood *why* each input mattered.
+
+**Result**: Onboarding completion went from 28% to 81%.
+
+### Prompt Intelligence Layer
+
+Rather than a blank text input, I designed a structured prompt builder — a smart form that surfaced the right context fields based on content type. Writing a blog post? See fields for audience, tone, key points, length. Writing an email? See fields for goal, recipient, CTA, and subject line.
+
+The prompt builder was collapsible for experienced users who preferred free-form input — but defaults guided new users toward better outcomes.
+
+### Output Comparison View
+
+I redesigned the output experience around three simultaneous variations. Every generation produced three distinct outputs — one more formal, one more casual, one balanced. Users picked their starting point and iterated from there.
+
+This eliminated the "one bad output = broken tool" failure mode. Even when variation 1 was off, variation 2 or 3 usually felt closer to what the user wanted — and showed them the range of the AI's capability.
+
+### In-Context Editing & Regeneration
+
+I added inline editing with AI-assisted regeneration. Users could highlight a paragraph they didn't like, type a note ("make this more concise" or "add a statistic"), and regenerate just that section. The AI understood context from both the document and the edit instruction.
+
+This made iteration feel like editing, not restarting — a fundamental psychological shift.
+
+---
+
+## Outcomes
+
+| Metric | Before | After (90 days) | Change |
+|---|---|---|---|
+| Daily active users | 400 | 740+ | **+85%** |
+| Onboarding completion | 28% | 81% | **+189%** |
+| 7-day retention | 22% | 51% | **+132%** |
+| Avg generations per session | 1.8 | 4.3 | **+139%** |
+| NPS score | 11 | 47 | **+327%** |
+
+---
+
+## Reflection
+
+AI Genie crystallized my thinking on what makes AI product design uniquely challenging: **the product's quality is invisible until users know how to use it properly**. Unlike a static UI where competence is built over time, AI tools require users to develop mental models of a dynamic, non-deterministic system.
+
+The most impactful design decision wasn't a component or a layout — it was **reversing the sequence of value delivery and information collection**. Show the magic. Earn the setup.

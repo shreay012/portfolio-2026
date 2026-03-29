@@ -1,0 +1,244 @@
+---
+title: QuickHire — Redesigning AI-Powered Job Matching
+slug: quickhire
+description: How I redesigned a job matching platform to reduce time-to-hire by 60% through AI-powered recommendations and trust-focused UX.
+role: Lead Product Designer
+timeline: September – December 2024 (14 weeks)
+industry: HR Tech / Recruitment
+tags: [UX Design, Product Strategy, Growth Design, AI/ML]
+date: "2024-12-01"
+featured: true
+coverGradient: rgba(79,140,255,0.12) 0%, rgba(79,140,255,0.04) 50%, transparent 100%
+accentColor: "#4F8CFF"
+outcome: Reduced average time-to-hire from 23 days to 9 days (−61%). Candidate drop-off in the matching flow fell by 44%.
+heroImage: "/projects/quickhire/hero.svg"
+heroImageAlt: "QuickHire dashboard and candidate matching hero visual"
+---
+
+## The Brief
+
+QuickHire is an AI-powered recruitment platform for high-growth startups. By late 2024, they had ~40,000 job seekers and 2,000 employers actively using the platform — but conversion rates told a different story.
+
+Their PM reached out to me with a simple message: *"Our AI is good. Our design is killing it."*
+
+After a 45-minute discovery call, I had enough to understand the scope. This would be a ground-up redesign of the candidate matching experience, employer dashboard, and the trust signals that sit between both.
+
+<ProjectImage
+	src="/projects/quickhire/image-1.svg"
+	alt="QuickHire research and redesign overview visual"
+	caption="Image 1: High-level redesign overview spanning candidate matching, employer operations, and trust-building touchpoints."
+/>
+
+---
+
+## Problem Discovery
+
+**What the data said:**
+
+- 67% of candidates who received a job match never clicked through to apply
+- 31% abandoned the onboarding before completing their profile
+- Average employer posted 4 jobs before churning — well below the 12 needed for ROI
+
+**What the users said:**
+
+I ran 18 user interviews over two weeks — 12 job seekers and 6 hiring managers. Key themes:
+
+> *"The matches feel random. I have no idea why it's suggesting these jobs to me."*
+— Job seeker, 4 years experience in product
+
+> *"I don't trust that real people are reviewing applications. It feels like it disappears into a void."*
+— Job seeker, recent graduate
+
+> *"The candidate profiles tell me nothing I actually need. I can't see culture fit or communication style."*
+— Hiring Manager, Series B startup
+
+**The real problem:** The AI was accurate, but the interface communicated zero transparency. Users couldn't understand *why* they were matched, so they didn't trust the matches — and without trust, they didn't act.
+
+<ProjectImage
+	src="/projects/quickhire/image-2.svg"
+	alt="QuickHire candidate onboarding and profile completion flow"
+	caption="Image 2: The initial candidate flow was redesigned around progressive disclosure instead of long upfront forms."
+/>
+
+---
+
+## Research Synthesis
+
+I mapped the full user journey for both candidates and employers, marking friction points, emotional states, and drop-off events.
+
+**Key insights:**
+
+1. **Trust deficit at first match**: Candidates saw a job card with a "93% match" score but had no understanding of what those 93% were based on. No context = no credibility.
+
+2. **Profile completion resistance**: The onboarding asked for 14 pieces of information upfront. Classic form fatigue. Users needed to see value before being asked to give value.
+
+3. **Employer-side chaos**: Employers received applications in an undifferentiated list. No signal on which candidates were worth reviewing first — so they reviewed in order, creating massive inefficiency.
+
+4. **Missing social proof layer**: Neither side had enough credibility signals. Job seekers couldn't see employer response rates. Employers couldn't see candidate engagement history.
+
+<ProjectImage
+	src="/projects/quickhire/image-3.svg"
+	alt="QuickHire explainable match card system"
+	caption="Image 3: Match cards were reframed to explain alignment in plain language instead of hiding behind an opaque score."
+/>
+
+---
+
+## Design Principles
+
+Before touching Figma, I defined three principles for this redesign:
+
+1. **Explainable over magical** — Every AI decision needs a plain-language explanation. Confidence comes from understanding.
+2. **Progressive commitment** — Ask for information as users experience value, not before.
+3. **Close the loop** — Both sides need to know what happened. Application sent → acknowledged → reviewed → decision.
+
+<ExperiencePanel
+	leftTitle="Candidate Journey"
+	leftSummary="The candidate experience was rebuilt around trust and momentum: clearer match reasoning, fewer upfront asks, and complete application visibility."
+	leftPoints={[
+		'See why a role is a match before deciding whether to apply.',
+		'Complete only essential onboarding fields at the start.',
+		'Track every application stage without ambiguity or silence.',
+	]}
+	rightTitle="Employer Workflow"
+	rightSummary="The employer side was redesigned for speed and signal quality: better prioritization, clearer reputation cues, and less manual sorting."
+	rightPoints={[
+		'Review high-signal candidates first instead of scanning everything equally.',
+		'Use profile depth and response behavior as trust indicators.',
+		'Close the hiring loop faster with explicit communication states.',
+	]}
+/>
+
+---
+
+## Key Design Decisions
+
+### Match Explanation Cards
+
+The single highest-impact change: replacing the opaque match percentage with a human-readable explanation.
+
+Instead of: `93% Match`
+
+We designed: A 3-point explanation card showing exactly which aspects of the role aligned with the candidate's profile — skills match, seniority fit, location preference. Each card became scannable context, not a black-box score.
+
+### Progressive Onboarding
+
+We cut the initial onboarding from 14 fields to 4 (name, current role, skills, location). The remaining information was requested contextually — only when the user needed it to complete an action.
+
+Profile completion rate increased from 34% to 78%.
+
+### Candidate Reputation Layer
+
+Added a lightweight "engagement score" for candidates — based on response rate, profile completeness, and application follow-through. Visible to employers, it surfaced reliable candidates without discrimination.
+
+### Two-Way Communication Status
+
+Built a transparent status trail for every application: Applied → Viewed → Shortlisted → Responded. Candidates could see exactly where their application stood, eliminating anxiety and reducing "ghosting" complaints by 38%.
+
+<InteractiveProjectGallery
+	eyebrow="QuickHire Screens"
+	title="8-screen interactive product walkthrough"
+	intro="Instead of dumping static mockups into the page, this gallery lets visitors inspect the redesigned system frame by frame across candidate and employer experiences."
+	images={[
+		{
+			src: '/projects/quickhire/image-1.svg',
+			alt: 'QuickHire redesign overview visual',
+			title: 'System Overview',
+			caption: 'A top-level product map showing how the redesign aligns matching, onboarding, screening, and trust communication.',
+			tag: 'Overview',
+		},
+		{
+			src: '/projects/quickhire/image-2.svg',
+			alt: 'QuickHire onboarding flow redesign',
+			title: 'Progressive Onboarding',
+			caption: 'The flow reduces early friction by collecting only essential information before revealing value.',
+			tag: 'Candidate',
+		},
+		{
+			src: '/projects/quickhire/image-3.svg',
+			alt: 'QuickHire explainable matching interface',
+			title: 'Match Explanation Cards',
+			caption: 'Explainability shifts the match score from black-box magic to understandable reasoning.',
+			tag: 'Candidate',
+		},
+		{
+			src: '/projects/quickhire/image-4.svg',
+			alt: 'QuickHire candidate-side trust UI',
+			title: 'Trust Signals',
+			caption: 'Candidate-side trust layers help users understand employer legitimacy and match confidence.',
+			tag: 'Candidate',
+		},
+		{
+			src: '/projects/quickhire/image-5.svg',
+			alt: 'QuickHire employer workflow redesign',
+			title: 'Employer Workflow',
+			caption: 'The hiring view is simplified around high-signal review states and reduced sorting effort.',
+			tag: 'Employer',
+		},
+		{
+			src: '/projects/quickhire/image-6.svg',
+			alt: 'QuickHire shortlist prioritization interface',
+			title: 'Shortlist Prioritization',
+			caption: 'Candidate review order becomes intentional by surfacing readiness and response quality.',
+			tag: 'Employer',
+		},
+		{
+			src: '/projects/quickhire/image-7.svg',
+			alt: 'QuickHire application status visibility flow',
+			title: 'Status Transparency',
+			caption: 'Application progress is visible end-to-end, reducing uncertainty and ghosting frustration.',
+			tag: 'Shared',
+		},
+		{
+			src: '/projects/quickhire/image-8.svg',
+			alt: 'QuickHire final end-to-end platform system',
+			title: 'Final Platform System',
+			caption: 'The final design system connects matching, onboarding, and recruitment operations into one coherent product story.',
+			tag: 'Final',
+		},
+	]}
+/>
+
+<ProjectImageRow
+	leftSrc="/projects/quickhire/image-4.svg"
+	leftAlt="QuickHire candidate-side matching flow redesign"
+	rightSrc="/projects/quickhire/image-5.svg"
+	rightAlt="QuickHire employer-side hiring workflow redesign"
+	leftCaption="Image 4: Candidate-side match explanation and trust signals"
+	rightCaption="Image 5: Employer-side review and communication states"
+/>
+
+---
+
+## Outcomes
+
+| Metric | Before | After | Change |
+|---|---|---|---|
+| Time-to-hire (avg) | 23 days | 9 days | **−61%** |
+| Candidate match click-through | 33% | 71% | **+115%** |
+| Profile completion | 34% | 78% | **+129%** |
+| Employer 90-day retention | 41% | 63% | **+54%** |
+| Application "ghosting" complaints | baseline | −38% | **−38%** |
+
+<ProjectImageRow
+	leftSrc="/projects/quickhire/image-6.svg"
+	leftAlt="QuickHire employer shortlist prioritization"
+	rightSrc="/projects/quickhire/image-7.svg"
+	rightAlt="QuickHire status visibility system"
+	leftCaption="Image 6: Prioritized review flow for faster employer decision-making"
+	rightCaption="Image 7: Transparent status updates to reduce anxiety and support follow-through"
+/>
+
+<ProjectImage
+	src="/projects/quickhire/image-8.svg"
+	alt="QuickHire final platform showcase"
+	caption="Image 8: Final end-to-end platform expression tying together candidate trust, employer efficiency, and explainable AI."
+/>
+
+---
+
+## Reflection
+
+This project reinforced something I've come to believe deeply: **the best AI UX is humble AI UX**. When systems explain themselves, users extend trust. When systems feel like black boxes, users disengage — regardless of how technically accurate the output is.
+
+The second lesson: progressive onboarding isn't just a UX nice-to-have. It's a growth lever. Asking for less upfront — while delivering clear value first — fundamentally changes how users perceive the product.

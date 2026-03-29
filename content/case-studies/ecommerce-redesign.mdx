@@ -1,0 +1,118 @@
+---
+title: E-Commerce Overhaul — From 7 Steps to 2
+slug: ecommerce-redesign
+description: Complete UX overhaul of checkout and product pages for a D2C fashion brand, collapsing a 7-step checkout into 2 and driving a 45% lift in conversion rate.
+role: Product Designer (UX Strategy + UI)
+timeline: January – April 2023 (14 weeks)
+industry: E-Commerce / D2C Fashion
+tags: [E-Commerce, CRO, UI Design, Checkout Optimization]
+date: "2023-04-30"
+featured: true
+coverGradient: rgba(249,115,22,0.12) 0%, rgba(249,115,22,0.04) 50%, transparent 100%
+accentColor: "#F97316"
+outcome: +45% conversion rate. Cart abandonment fell from 74% to 49%. Average order value grew 18% through redesigned cross-sell placement.
+---
+
+## The Brief
+
+A D2C fashion brand had been growing paid acquisition aggressively but was watching most of their ad spend evaporate in the checkout funnel. They were spending $180,000/month on ads and converting at 1.4%. My job: figure out why, and fix it.
+
+The client's hypothesis going in was simple — "our checkout is too long." After a week of analysis, I confirmed they were right, but the problems went much deeper than step count.
+
+---
+
+## Diagnostic Phase
+
+### Analytics Audit
+
+I mapped the full funnel using their Shopify analytics, Google Analytics 4, and Hotjar session recordings:
+
+- **74%** cart abandonment rate (industry avg: 70%)
+- Of users who hit the checkout page, **61%** dropped on the shipping information step
+- **23%** of drop-offs happened when users were asked to create an account
+- Mobile conversion rate: **0.6%** (desktop: 2.8%)
+
+### Session Recording Analysis
+
+I watched 80+ session recordings, looking specifically at mobile sessions in the checkout flow. The patterns were unmistakable:
+
+- Users typed shipping information, only to find their billing address defaulted to a different state
+- Promo code fields caused widespread anxiety — users with no code still clicked it, then felt penalized by the expanding form
+- The "Create Account" gate before checkout caused an immediate 40%+ drop in the recordings
+
+### Heatmap Analysis
+
+Product Detail Pages (PDPs) showed users scrolling past the size guide before clicking Buy — then returning to size guides after landing on checkout because they'd second-guessed their choice.
+
+---
+
+## Key Problems Identified
+
+1. **Account creation forced before checkout** — Industry research (and our recordings) confirms: forced registration at checkout is the #1 killer of conversion
+2. **7-step checkout with excessive fields** — Requiring delivery instructions, phone number, and account creation on separate steps
+3. **Promo code field anxiety** — Expanding form triggered users without codes to search for codes, abandoning cart
+4. **PDP to checkout context loss** — Key decision-making information (size guide, materials, return policy) disappeared at checkout
+5. **Mobile layout failures** — CTAs buried below the fold, form inputs without autofill optimization, no Apple Pay / Google Pay surface
+
+---
+
+## Design Solutions
+
+### Guest Checkout + Smart Account (2 Steps)
+
+I restructured checkout entirely:
+
+**Step 1**: Email + Express pay options (Apple Pay, Google Pay, Shop Pay) — reducing checkout to a single tap for ~35% of mobile users.
+
+**Step 2**: Shipping + Payment on one screen for users not using express checkout. Auto-fill enabled, smart defaults, same-as-shipping billing defaulted to ON.
+
+Account creation moved to **post-purchase** — "Save your details for next time?" — where it converted at 41% with no drop-off cost.
+
+### Contextual PDP Design
+
+I redesigned Product Detail Pages to surface the three most common pre-checkout questions inline: size guide (collapsible), material composition, and return policy — all within the buy zone.
+
+Added a sticky buy bar on mobile that revealed when the primary CTA scrolled off-screen, keeping the purchase action always accessible.
+
+### Promo Code Field
+
+Moved promo code to an unobtrusive link below the order summary: "Have a promo code?" This eliminated the anxiety trigger for users without codes and maintained visibility for those with codes.
+
+### Trust Signal Layer
+
+Added three trust signals to the checkout header: secure payment badge, free returns reminder, and delivery estimation. Users who saw these signals on mobile had a 22% higher checkout completion rate.
+
+### Mobile-First Rebuild
+
+Complete mobile checkout rebuild with:
+- Touch-optimized input sizing (minimum 44px targets)
+- Keyboard type optimization (`type="email"`, `type="tel"`, `autocomplete` attributes)
+- Apple Pay and Google Pay as primary CTA on mobile
+- Reduced form to essential fields only (removed phone, removed delivery notes from required)
+
+---
+
+## Outcomes
+
+| Metric | Before | After | Change |
+|---|---|---|---|
+| Overall conversion rate | 1.4% | 2.03% | **+45%** |
+| Cart abandonment | 74% | 49% | **−34%** |
+| Mobile conversion | 0.6% | 1.4% | **+133%** |
+| Checkout-to-purchase | 39% | 61% | **+56%** |
+| Average order value | $84 | $99 | **+18%** |
+| Post-purchase account creation | 0% | 41% | **New metric** |
+
+---
+
+## ROI Context
+
+At their $180k/month ad spend and previous conversion rate of 1.4%, they were generating roughly 2,520 orders/month. At the new 2.03% rate, that's ~3,654 — **1,134 additional orders per month** from the same ad spend, with zero additional acquisition cost.
+
+---
+
+## Lessons
+
+E-commerce optimization is almost always a trust problem masquerading as a UX problem. The checkout steps weren't the root cause — they were symptoms. The real issue was that at every decision point, the design left users with unresolved anxiety: *"Is this the right size? Can I return it? Is this site secure?"*
+
+**Remove the anxiety. Remove the obstacle. People buy.**

@@ -1,0 +1,17 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="900" rx="32" fill="#081220"/>
+  <rect x="46" y="46" width="1108" height="808" rx="28" fill="#0C1727" stroke="rgba(255,255,255,0.1)"/>
+  <circle cx="952" cy="170" r="132" fill="#4F8CFF" fill-opacity="0.18"/>
+  <rect x="110" y="120" width="320" height="22" rx="11" fill="#9CC2FF" fill-opacity="0.9"/>
+  <rect x="110" y="166" width="204" height="14" rx="7" fill="white" fill-opacity="0.42"/>
+  <rect x="110" y="236" width="980" height="200" rx="24" fill="white" fill-opacity="0.04"/>
+  <rect x="148" y="282" width="274" height="16" rx="8" fill="white" fill-opacity="0.72"/>
+  <rect x="148" y="326" width="198" height="12" rx="6" fill="#4F8CFF" fill-opacity="0.9"/>
+  <rect x="148" y="374" width="404" height="14" rx="7" fill="white" fill-opacity="0.22"/>
+  <rect x="736" y="272" width="300" height="128" rx="20" fill="#4F8CFF" fill-opacity="0.12" stroke="#4F8CFF" stroke-opacity="0.35"/>
+  <rect x="110" y="492" width="300" height="248" rx="24" fill="white" fill-opacity="0.04"/>
+  <rect x="450" y="492" width="300" height="248" rx="24" fill="white" fill-opacity="0.04"/>
+  <rect x="790" y="492" width="300" height="248" rx="24" fill="white" fill-opacity="0.04"/>
+  <text x="110" y="92" fill="white" fill-opacity="0.82" font-family="Arial, sans-serif" font-size="26" font-weight="700">QuickHire Image 4</text>
+  <text x="110" y="790" fill="white" fill-opacity="0.54" font-family="Arial, sans-serif" font-size="24">Inline case study image placeholder</text>
+</svg>

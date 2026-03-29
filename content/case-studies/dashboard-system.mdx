@@ -1,0 +1,116 @@
+---
+title: Analytics Dashboard & Design System for B2B SaaS
+slug: dashboard-system
+description: Designed a scalable analytics dashboard and full design system for a B2B SaaS platform serving 200k+ users — reducing design-to-development time by 40%.
+role: Lead Product Designer + Design Systems
+timeline: August – December 2023 (18 weeks)
+industry: B2B SaaS / Analytics
+tags: [Design Systems, Dashboard, Data Visualization, B2B]
+date: "2023-12-15"
+featured: false
+coverGradient: rgba(139,92,246,0.12) 0%, rgba(139,92,246,0.04) 50%, transparent 100%
+accentColor: "#8B5CF6"
+outcome: 200k+ users on the redesigned platform. Design-to-dev time reduced by 40%. Dashboard engagement (sessions per user per week) increased 28%.
+---
+
+## Context
+
+This B2B SaaS company provided workflow automation software for mid-market operations teams. With 200,000+ users across enterprise accounts, they'd scaled their product by adding features — but never their design system.
+
+The result was a visual and structural disaster: 7 different button styles across the product, 4 different modal patterns, no token system, and a design team spending 40% of their time rebuilding existing patterns from scratch.
+
+The ask: design a modern analytics dashboard (their most-requested feature) *and* build the design system infrastructure to ship it — and everything after it — consistently.
+
+---
+
+## Phase 1: Design System Audit & Architecture
+
+Before designing a single new feature, I spent three weeks auditing the existing product.
+
+### Audit Findings
+
+- **247 unique color values** in use across the codebase (many differed by 1-2% opacity)
+- **12 different type sizes** with no semantic naming convention
+- **7 button variants**, 4 of which were functionally identical
+- **No spacing scale** — developers were eyeballing margins and padding
+- **No dark mode support** despite >60% of enterprise users requesting it
+
+### Token Architecture
+
+I designed a three-tier token system:
+
+1. **Primitive tokens** — Raw values (colors, sizes): `color-blue-500`, `spacing-4`
+2. **Semantic tokens** — Purpose-mapped values: `color-interactive-primary`, `spacing-component-md`
+3. **Component tokens** — Component-specific: `button-primary-background`, `input-border-focus`
+
+This architecture allowed theming (dark mode, white-label) without touching component code.
+
+### Core Component Library
+
+Built 120+ components across:
+- **Primitives**: buttons, inputs, badges, tooltips, dropdowns
+- **Data display**: tables, charts (7 types), stats cards, progress indicators
+- **Layout**: grids, sidebars, modals, drawers, command palettes
+- **Navigation**: sidebar nav, tabs, breadcrumbs, pagination
+
+Each component was documented with:
+- Usage guidelines (do/don't)
+- Prop documentation
+- Accessibility notes (ARIA patterns, keyboard navigation)
+- Figma variants covering all interactive states
+
+---
+
+## Phase 2: Analytics Dashboard Design
+
+With the system in place, the dashboard itself could be designed efficiently. The challenge was data density — operations teams needed access to complex data without cognitive overload.
+
+### User Research
+
+I spoke with 12 power users across 6 enterprise accounts to understand how they currently used data:
+
+- 3 distinct user types emerged: **Operators** (daily users, task-focused), **Analysts** (deep-dive, weekly), **Executives** (summary, monthly)
+- All three had completely different data needs and frequency patterns
+- Current state: one fixed dashboard that served none of them well
+
+### Dashboard Architecture
+
+I designed a role-adaptive dashboard system:
+
+**Layout layer**: A configurable widget grid using a 12-column system, with preset layouts for each user type. Users could customize but had sensible defaults.
+
+**Data layer**: Each widget supported multiple time ranges, comparison periods, and drill-down states. The key innovation: a context-preserving drill-down that let Analysts explore data without losing their starting context.
+
+**Notification layer**: Smart alerts surfaced anomalies (unusual spikes or drops) directly in the dashboard, rather than requiring users to interpret charts themselves.
+
+### Key UI Patterns
+
+**Stats comparison cards**: Primary metric with period-over-period comparison, trend sparkline, and a confidence indicator for AI-forecasted values.
+
+**Table with inline charts**: Data tables where rows contained embedded sparklines — allowing users to see trends without leaving the table context.
+
+**Contextual action layer**: Right-click context menus on chart elements to "dig deeper," "create alert," or "export this segment" — power features that didn't clutter the default view.
+
+---
+
+## Outcomes
+
+| Metric | Before | After | Change |
+|---|---|---|---|
+| Dashboard weekly engagement | 1.8 sessions/user/wk | 2.3 sessions/user/wk | **+28%** |
+| Time to create new feature design | ~3 days avg | ~1.8 days avg | **−40%** |
+| Design QA issues per sprint | 18 avg | 4 avg | **−78%** |
+| Developer "where's the component?" questions | Daily | Rare | **Near zero** |
+| Dark mode support | None | Full | **Complete** |
+
+---
+
+## The Design System Effect
+
+The most surprising outcome was on the *design team productivity* side. After the system shipped:
+
+- New features were designed in Figma using components, not built from scratch
+- Engineers had a single source of truth — no more Slack messages asking about hover states
+- QA issues fell by 78% because inconsistency was designed out at the system level
+
+Design systems are often sold as "consistency tools." That's true but limiting. The real value is **compounding velocity** — every feature built on the system reaches parity quality faster than the last.
